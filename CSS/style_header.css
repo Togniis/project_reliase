@@ -1,0 +1,182 @@
+
+
+header{
+    background-color: #0D0D0D;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    max-width: 1500px;
+    width: 100%;
+    z-index: 1;
+}
+
+header .center{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+ 
+header .center .content{
+    display: flex;
+    justify-content: space-between;
+    width: 629px;
+}
+
+header .center .content .content-logo{
+    display: flex;
+    align-items: center;
+    width: 198px;
+    height: 80px;
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+header .center .content nav{
+    display: flex;
+    align-items: center;
+}
+
+header .center .content nav ul{
+    display: flex;
+    justify-content: right;
+}
+
+header .center .content nav ul li{
+    padding-left: 48px;
+}
+
+header .center .content nav ul .close{
+    display: none;
+}
+
+header .center .content nav ul li .label-2{
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    text-align: center; 
+    transition: 0.8s;
+}
+
+header .center .content nav ul li .label-2:hover{
+    color: #FFD2A4;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 2px #f0ad6a, 0 0 25px #f0ad6a, 0 0 5px #f0ad6a;
+}
+
+header .center .content .burger{
+    display: none;
+}
+
+header .center button{
+    display: contents;
+}
+
+header .center button a{
+    display: inline-block;
+    align-self: center;
+    padding: 20px 48px;
+    background: #FFD2A4;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: #1C1D28;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: 0.8s;
+}
+
+header .center button a:hover{
+    backdrop-filter: blur(80px);
+    background: #F2C79B;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px){
+    header .center .content{
+        width: 100%;
+    }
+    header .center .content .content-logo{
+        width: auto;
+        padding-right: 14px;
+    }
+    header .center .content nav ul li{
+        padding-left: 20px;
+    }
+    header .center button{
+        display: none;
+    }
+    header .center .content .burger{
+        display: block;
+        height: 20px;
+        align-self: center;
+    }
+    header .center .content .burger:hover{
+        pointer-events: painted;
+    }
+    header .center .content .burger i{
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 3px 0;
+        background: #fff;
+    }
+    header .center .content .menu{
+        display: none;
+        min-height: 100vh;
+        background: rgba(0,0,0,0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 85%;
+        min-width: 270px;
+        color: #fff;
+        padding-top: 130px;
+        transition: 1s;
+        z-index: 10;
+    }
+    header .center .content .menu.menu-show{
+        display: block;
+        left: 0;
+    }
+    header .center .content nav ul{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header .center button a{
+        padding: 18px 34px;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+    header .center button a{
+        padding: 18px 28px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    header .center button{
+        display: none;
+    }
+
+}
+
+
+
+
+
+

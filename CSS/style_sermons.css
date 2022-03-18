@@ -1,0 +1,384 @@
+
+/*container-first*/
+
+.container-first{
+    background: url(../img/sermons/bg-mountain.png);
+    max-width: 1500px;
+    width: 100%;
+    object-fit: cover;
+    background-position: center 100%;
+}
+
+.container-first .first-box{
+    padding: 160px 0;
+    padding-top: 220px;
+    font-family: 'Roboto Condensed';
+}
+
+.container-first .first-box p{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 16px;
+}
+
+/*container-join*/
+
+.container-join{
+    padding: 128px 0;
+}
+.container-join .join-head{
+    text-align: center;
+}
+
+.container-join .join-head h2{
+    padding: 16px 0;
+    max-width: 554px;
+    margin: 0 auto;
+}
+
+.container-join .join-body{
+    display: flex;
+    padding: 48px 0;
+}
+
+.container-join .join-body .body-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF5EB;
+    max-width: 435px;
+    width: 100%;
+    position: relative;
+}
+
+.container-join .join-body .body-info .time{
+    position: absolute;
+    text-align: right;
+    top: 32px;
+    right: 32px;
+}
+
+.container-join .join-body .body-info .info-box{
+    width: 256px;
+}
+
+.container-join .join-body .body-info .info-box h5{
+    padding: 16px 0;
+    width: 87%;
+}
+
+.container-join .join-body .body-info .info-box > .paragraph{
+    color: rgba(22, 23, 34, 0.78);
+}
+
+.container-join .join-body .body-info .info-box .box-time{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.container-join .join-body .body-info .info-box img{
+    padding-right: 16px;
+}
+
+.container-join .join-body .body-info .info-box .box-place{
+    display: flex;
+    padding-bottom: 32px;
+}
+
+.container-join .join-body .body-info .info-box batton a{
+    display: inline-block;
+    padding: 24px 64px;
+    background: #161722;
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: #FFD2A4;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: 0.8s;
+}
+
+.container-join .join-body .body-info .info-box batton a:hover{
+    color: #FFFFFF;
+    
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
+}
+
+.container-join .join-body .body-info .info-box batton:hover{
+    box-shadow: 100px #161722;
+}
+
+.container-join .join-sermons{
+    text-align: right;
+}
+
+.container-join .join-sermons a{
+    text-decoration: none;
+}
+
+.container-join .join-sermons a:hover{
+    color: #FFD2A4;
+    transition: 0.8s;
+}
+
+/*container-events */
+
+.container-events{
+    padding-bottom: 128px;
+}
+
+.container-events h2{
+    text-align: center;
+    padding-bottom: 64px;
+}
+.container-events .events-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-events .events-body .body-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF5EB;
+    max-width: 302px;
+    width: 100%;
+    padding: 80px 0;
+    position: relative;
+    
+}
+
+.container-events .events-body .body-info:hover{
+    background: linear-gradient(to bottom, #FFF5EB 95.8%, #FFD2A4 4.2%);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.container-events .events-body .body-info .time{
+    position: absolute;
+    text-align: right;
+    top: 24px;
+    right: 26px;
+}
+
+.container-events .events-body .body-info .info-box{
+    width: 222px;
+}
+
+.container-events .events-body .body-info .info-box h5{
+    padding: 16px 0;
+    width: 95%;
+}
+
+.container-events .events-body .body-info .info-box > .paragraph{
+    color: rgba(22, 23, 34, 0.78);
+}
+
+.container-events .events-body .body-info .info-box .box-time{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.container-events .events-body .body-info .info-box img{
+    padding-right: 16px;
+}
+
+.container-events .events-body .body-info .info-box .box-place{
+    display: flex;
+}
+
+@media screen and (max-width: 1500px){
+    .container-join .join-body .body-info{
+        width: 33%;
+    }
+    .container-join .join-body .body-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: none;
+    }
+
+    .container-join{
+        padding: 80px 0;
+    }
+    .container-join .join-body{
+        padding-top: 15px;
+    }
+
+    .container-events{
+        padding-bottom: 80px;
+    }
+    .container-events h2{
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .container-first .first-box {
+        padding: 160px 0;
+    }
+    .container-join .join-body {
+        padding: 20px 0;
+    }
+    .container-join .join-body .body-info{
+        height: 515px;
+        min-width: 330px;
+    }
+
+    
+    .container-events{
+        padding-bottom: 60px;
+    }
+    .container-events h2{
+        padding-bottom: 30px;
+    }
+    .container-events .events-body{
+        flex-wrap: wrap;
+    }
+    .container-events .events-body .body-info{
+        width: 24%;
+        padding: 60px 0;
+    }
+    .container-events .events-body .body-info .info-box{
+        width: 85%;
+    }
+
+    .container-join{
+        padding: 60px 0;
+    }
+    .container-join .join-body{
+        padding-top: 5px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .container-first{
+        background-position: 63% 100%;
+    }
+    .container-first .first-box{
+        padding-bottom: 80px;
+    }
+
+    .container-join{
+        padding: 40px 0;
+    }
+
+    .container-events{
+        padding-bottom: 40px;
+    }
+    .container-events h2{
+        padding-bottom: 20px;
+    }
+    .container-events .events-body .body-info{
+        width: 32.3%;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px){
+    .container-join .join-body {
+        flex-direction: column;
+    }
+    .container-join .join-body .body-info .info-box {
+        width: 80%;
+    }
+    .container-join .join-body .body-info{
+        width: 100%;
+        max-width: none;
+        height: 354px;
+    }
+    .container-join .join-body .body-info .info-box .box-flex {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 16px 0;
+    }
+    .container-join .join-body .body-info .info-box .box-time {
+        padding: 4px 0;
+        padding-right: 26px;
+    }
+    .container-join .join-body .body-info .info-box .box-place {
+        padding: 4px 0;
+    }
+
+    .container-events .events-body{
+        justify-content: space-around;
+    }
+    .container-events .events-body .body-info{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container-first{
+        background-position: 67% 100%;
+    }
+
+    .container-join{
+        padding: 25px 0;
+    }
+    .container-join .join-head h2{
+        padding: 5px 0;
+    }
+    .container-join .join-body .body-info{
+        height: auto;
+        min-width: auto;
+    }
+    .container-join .join-body .body-info .info-box {
+        padding: 15px 0;
+    }
+    .container-join .join-body .body-img img{
+        object-position: 50% 22%;
+    }
+
+    .container-events{
+        padding-bottom: 20px;
+    }
+    .container-events h2{
+        padding-bottom: 10px;
+    }
+    .container-events .events-body .body-info{
+        width: 90%;
+        max-width: none;
+    }
+    .container-events .events-body .body-info .info-box .box-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+    .container-events .events-body .body-info .info-box .box-time{
+        padding: 0;
+        padding-bottom: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    .container-first{
+        background-position: 69% 100%;
+    }
+    
+    .container-join .join-body .body-img img{
+        object-position: 23% 31%;
+    }
+    .container-join .join-body .body-info .time {
+        top: 20px;
+        right: 20px;
+    }
+    
+    .container-events .events-body .body-info{
+        width: 98%;
+    }
+}

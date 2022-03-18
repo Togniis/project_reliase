@@ -1,0 +1,223 @@
+
+footer{
+    background: #161722;
+    padding: 64px 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+footer .footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-left{
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-left .left-info img{
+    padding-bottom: 16px;
+}
+
+footer .footer-left .left-info .cap-02{
+    padding-bottom: 32px;
+}
+
+footer .footer-left .left-info .info-bot .cap-02{
+    padding-bottom: 16px;
+}
+
+footer .footer-left .left-info .info-bot .cap-02:last-child{
+    padding-bottom: 0;
+}
+
+footer .footer-left .left-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 34%;
+}
+
+footer .footer-left .left-nav .paragraph{
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+footer .footer-left .left-nav .nav-links li{
+    padding-bottom: 24px;
+}
+
+footer .footer-left .left-nav .nav-links li:last-child{
+    padding-bottom: 0;
+}
+
+footer .footer-left .left-nav .nav-links li a{
+    text-decoration: none;
+    display: block;
+}
+
+footer .footer-left .left-nav .nav-links li a:hover{
+    transition: 0.8s;
+    color: #FFD2A4;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 2px #f0ad6a, 0 0 25px #f0ad6a, 0 0 5px #f0ad6a;
+}
+
+footer .footer-left .left-nav .nav-connect .img-box{
+    display: flex;
+    justify-content: space-between;
+    width: 88px;
+}
+
+footer .footer-right{
+    position: relative;
+    max-width: 512px;
+    width: 40%;
+}
+
+footer .footer-right h4{
+    color: #FFFFFF;
+    max-width: 378px;
+    padding-bottom: 32px;
+}
+
+footer .footer-right .form-control{
+    padding: 20px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: #161722;
+    max-width: 512px;
+    width: 100%;
+}
+
+footer .footer-right .form-control:focus{
+    background-color: lightblue;
+    color: #161722;
+}
+
+footer .footer-right .form-control::-webkit-input-placeholder{ 
+    color: rgba(255, 255, 255, 0.8); 
+}
+
+footer .footer-right button{
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    border: none;
+    background: #161722;
+    right: 0;
+    bottom: 1px;
+} 
+
+footer .footer-right button a{
+    display: inline-block;
+    align-self: center;
+    padding: 24px 64px;
+    background: #FFD2A4;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: #1C1D28;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    transition: 0.8s;
+}
+
+footer .footer-right button a:hover{
+    backdrop-filter: blur(80px);
+    background: #F2C79B;
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 1300px){
+    footer{
+        padding: 55px 0;
+    }
+    footer .footer-left{
+        width: 51%;
+    }
+    footer .footer-left .left-nav{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    footer{
+        padding: 45px 0;
+    }
+    footer .footer-left{
+        width: 47%;
+    }
+    footer .footer-left .left-nav{
+        width: 47%;
+    }
+    footer .footer-right{
+        width: 51%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        padding: 35px 0;
+    }
+    footer .footer-flex{
+        flex-direction: column;
+    }
+    footer .footer-left{
+        width: 81%;
+        padding-bottom: 20px;
+    }
+    footer .footer-right{
+        width: 100%;
+    }
+    footer .footer-right h4{
+        max-width: none;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        padding: 30px 0;
+    }
+    footer .footer-left{
+        width: 93%;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    footer{
+        padding: 25px 0;
+    }
+    footer .footer-left{
+        flex-direction: column;
+    }
+    footer .footer-left .left-info img{
+        padding-bottom: 10px;
+    }
+    footer .footer-left .left-info p{
+        display: none;
+    }
+    footer .footer-left .left-nav{
+        width: 100%;
+        flex-direction: column;
+    }
+    footer .footer-left .left-nav .nav-links nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer .footer-right button{
+        position: static;
+        width: 100%;
+        padding-top: 10px;
+    }
+    footer .footer-right button a{
+        width: 51%;
+    }
+}
